@@ -1,6 +1,6 @@
 {
   "name": "react-contextmenu-rlc",
-  "version": "2.15.0",
+  "version": "2.15.1",
   "description": "Context Menu implemented in React (RLC fork)",
   "main": "modules/index.js",
   "module": "es6/index.js",
@@ -19,6 +19,7 @@
     "src/index.d.ts"
   ],
   "scripts": {
+    "setup": "npx --yes yarn@1.22.22 install --frozen-lockfile --ignore-optional",
     "lint": "eslint ./src ./examples",
     "test": "npm run lint && npm run test:only",
     "test:only": "jest --no-cache --verbose --coverage",
@@ -33,9 +34,13 @@
     "build:dev": "cross-env BABEL_ENV=es6 webpack --config examples/webpack.config.js --progress --profile --colors",
     "start": "npm run build:examples && npm run start:server",
     "start:server": "http-server public -p 3000",
-    "prepublishOnly": "npm run build"
+    "prepack": "npm run build"
   },
+  "packageManager": "yarn@1.22.22",
   "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
+  "contributors": [
+    { "name": "Roguelike Celebration organizers", "email": "contact@roguelike.club", "url": "https://github.com/Roguelike-Celebration" }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

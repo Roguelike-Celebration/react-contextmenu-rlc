@@ -4,14 +4,50 @@ This project is minimally maintained. This is Roguelike Celebration's fork of re
 
 The final release of the original react-contextmenu project was version 2.14.0, and its final Git commit is tagged `upstream-final` here. The RLC fork releases start with version "2.14.0-rlc" that's the upstream 2.14.0 with a couple of our changes (which was only new commits in git and still internally numbered as 2.14.0), and version 2.15.0 was the first release we started numbering new releases and doing builds. The minor version bump is just to distinguish the fork; no significant feature additions.
 
+react-contextmenu's original author is Vivek Kumar Bansal (<contact@vkbansal.me>). This fork is maintained by the Roguelike Celebration organizers (<contact@roguelike.club>).
+
 ## Setup and building
 
-This repo uses an old toolchain, with yarn. A plain `npm install` will not work.
+TL;DR: `nvm use; npm run setup`.
 
+This repo uses an old toolchain, with yarn. Run this under Node 16, installed with NVM.
+
+Install the dependency modules with yarn. A plain `npm install` will not work. Run `npm run setup` to do this. Or, manually, `npx --yes yarn@1.22.22 install --frozen-lockfile --ignore-optional`. (This is a stopgap to reproduce the upstream's setup with more-current toolchains.)
+
+Run `npm pack` to do a build and create the dist tarball from it.
+
+## Testing
+
+To test the MUD locally against a build of this react-contextmenu-rlc package, do a build with `npm pack` as above. Then in your `azure-mud` repo clone, install the package from the local tarball, like this:
+
+```bash
+npm install --no-save ~/repos/RLC-repos/react-contextmenu-rlc/react-contextmenu-rlc-<version>.tgz
+```
+
+Then do your tests on the MUD:
+
+```bash
+npm run checks && npm run build
+npm run dev
+```
+
+When you're done, restore azure-mud's modules to what they are in the lockfile:
+
+```bash
+npm ci
+```
+
+## Releases
+
+Bump `version` in `package.json` to the new release.
+
+Run `npm pack` to create a dist tarball. (Do it under Node 16 with deps installed via `npm run setup`. The `prepack` step will handle the build.) Tag the release with `git tag -a` and create the release on GitHub, attaching the tarball to the release.
+
+Don't replace existing published tarballs. Any change should get a new version. This matters because consumers like azure-mud record the tarball's SHA checksum in `package-lock.json`, so a changed release tarball will break the build.
 
 ## OG README
 
-The original upstream (pre-fork) project's README follows.
+The original upstream (pre-fork) project's README follows. It is now out of date, especially because it uses the old project name `react-contextmenu`, while we renamed this to `react-contextmenu-rlc` to differentiate it from the original upstream.
 
 ----------------
 

@@ -1,6 +1,9 @@
 # Our build artifacts
 
 react-contextmenu-*.tgz
+dist/
+es6/
+modules/
 
 # Generic stuff
 
