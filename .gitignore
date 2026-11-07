@@ -1,3 +1,9 @@
+# Our build artifacts
+
+react-contextmenu-*.tgz
+
+# Generic stuff
+
 node_modules/
 public/
 coverage/

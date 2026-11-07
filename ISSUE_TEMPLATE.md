@@ -4,7 +4,7 @@ Thank you for contributing!
 
 <!-- BUG TEMPLATE -->
 ## Version
-1.9.1
+2.15.0
 
 ## Test Case
 https://jsfiddle.net/Luktwrdm/54/

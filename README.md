@@ -1,3 +1,20 @@
+# react-contextmenu-rlc - RLC fork of react-contextmenu
+
+This project is minimally maintained. This is Roguelike Celebration's fork of react-contextmenu for use with the [RLC Azure MUD](https://github.com/Roguelike-Celebration). This only receives enough maintenance to keep working for that specific project.
+
+The final release of the original react-contextmenu project was version 2.14.0, and its final Git commit is tagged `upstream-final` here. The RLC fork releases start with version "2.14.0-rlc" that's the upstream 2.14.0 with a couple of our changes (which was only new commits in git and still internally numbered as 2.14.0), and version 2.15.0 was the first release we started numbering new releases and doing builds. The minor version bump is just to distinguish the fork; no significant feature additions.
+
+## Setup and building
+
+This repo uses an old toolchain, with yarn. A plain `npm install` will not work.
+
+
+## OG README
+
+The original upstream (pre-fork) project's README follows.
+
+----------------
+
 # Project is no longer maintained
 
 [![NPM version][npm-image]][npm-url]
@@ -98,6 +115,7 @@ see [usage docs](./docs/usage.md) / [examples](./examples) for more details.
 [ALL FAQs](./docs/faq.md)
 
 ## Who's using react-contextmenu?
+
 - [react-data-grid](https://github.com/adazzle/react-data-grid)
 - [teamup.com](https://teamup.com)
 - [Spotify Web Player](https://open.spotify.com)

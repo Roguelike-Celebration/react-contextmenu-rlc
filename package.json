@@ -1,7 +1,7 @@
 {
-  "name": "react-contextmenu",
-  "version": "2.14.0",
-  "description": "Context Menu implemented in React",
+  "name": "react-contextmenu-rlc",
+  "version": "2.15.0",
+  "description": "Context Menu implemented in React (RLC fork)",
   "main": "modules/index.js",
   "module": "es6/index.js",
   "typings": "src/index.d.ts",
@@ -39,12 +39,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vkbansal/react-contextmenu.git"
+    "url": "https://github.com/Roguelike-Celebration/react-contextmenu-rlc.git"
   },
   "bugs": {
-    "url": "https://github.com/vkbansal/react-contextmenu/issues"
+    "url": "https://github.com/Roguelike-Celebration/react-contextmenu-rlc/issues"
   },
-  "homepage": "https://github.com/vkbansal/react-contextmenu",
+  "homepage": "https://github.com/Roguelike-Celebration/react-contextmenu-rlc",
   "dependencies": {
     "classnames": "^2.2.5",
     "object-assign": "^4.1.0"
