@@ -61,9 +61,9 @@ declare module "react-contextmenu-rlc" {
     export const MenuItem: React.ComponentClass<MenuItemProps>;
     export const SubMenu: React.ComponentClass<SubMenuProps>;
     export function connectMenu<P>(
-      menuId: string
+        menuId: string
     ): (
-      Child: React.ComponentType<P & ConnectMenuProps>
+        Child: React.ComponentType<P & ConnectMenuProps>
     ) => React.ComponentType<P>;
     export function showMenu(opts?: any, target?: HTMLElement): void;
     export function hideMenu(opts?: any, target?: HTMLElement): void;

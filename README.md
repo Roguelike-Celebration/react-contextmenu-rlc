@@ -69,14 +69,14 @@ ContextMenu in React with accessibility support. Live Examples can be found [her
 
 ## Table of contents
 
- - [Installation](#installation)
- - [Browser Support](#browser-support)
- - [Usage](#usage)
- - [API](#api)
- - [FAQs](#faqs)
- - [Contributors](#contributors)
- - [Changelog](#changelog)
- - [License](#license)
+- [Installation](#installation)
+- [Browser Support](#browser-support)
+- [Usage](#usage)
+- [API](#api)
+- [FAQs](#faqs)
+- [Contributors](#contributors)
+- [Changelog](#changelog)
+- [License](#license)
 
 ## Installation
 

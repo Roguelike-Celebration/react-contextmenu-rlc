@@ -25,7 +25,7 @@
     background: 0 0;
     border: 0;
     color: #373a3c;
-	cursor: pointer;
+    cursor: pointer;
     font-weight: 400;
     line-height: 1.5;
     padding: 3px 20px;
@@ -60,7 +60,7 @@
 }
 
 .react-contextmenu-item.react-contextmenu-submenu {
-	padding: 0;
+    padding: 0;
 }
 
 .react-contextmenu-item.react-contextmenu-submenu > .react-contextmenu-item {
