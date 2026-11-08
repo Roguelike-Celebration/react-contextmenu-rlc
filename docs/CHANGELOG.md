@@ -1,5 +1,10 @@
 # react-contextmenu-rlc CHANGELOG
 
+## 2.17.0 - 2026-11-07
+
+- Stricter TS types for `onClick` and related handlers.
+  - Drops the generic `| Function` escape hatch, and types the `data` parameter as `any`. No runtime changes. Handlers that were already mistyped may now result in type errors.
+
 ## 2.16.0 - 2026-11-07
 
 - React 18/19 compatibility.

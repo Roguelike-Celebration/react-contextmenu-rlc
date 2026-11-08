@@ -1,6 +1,6 @@
 {
   "name": "react-contextmenu-rlc",
-  "version": "2.16.0",
+  "version": "2.17.0",
   "description": "Context Menu implemented in React (RLC fork)",
   "main": "modules/index.js",
   "module": "es6/index.js",

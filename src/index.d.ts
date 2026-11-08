@@ -9,7 +9,7 @@ declare module "react-contextmenu-rlc" {
         hideOnLeave?: boolean,
         rtl?: boolean,
         onHide?: {(event: any): void},
-        onMouseLeave?: {(event: React.MouseEvent<HTMLElement>, data: Object, target: HTMLElement): void} | Function,
+        onMouseLeave?: {(event: React.MouseEvent<HTMLElement>, data: any, target: HTMLElement): void},
         onShow?: {(event: any): void},
         preventHideOnContextMenu?: boolean,
         preventHideOnResize?: boolean,
@@ -37,7 +37,7 @@ declare module "react-contextmenu-rlc" {
         disabled?: boolean,
         divider?: boolean,
         preventClose?: boolean,
-        onClick?: {(event: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>, data: Object, target: HTMLElement): void} | Function,
+        onClick?: {(event: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>, data: any, target: HTMLElement): void},
     }
 
     export interface SubMenuProps {
@@ -48,7 +48,7 @@ declare module "react-contextmenu-rlc" {
         hoverDelay?: number,
         rtl?: boolean,
         preventCloseOnClick?: boolean,
-        onClick?: {(event: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>, data: Object, target: HTMLElement): void} | Function,
+        onClick?: {(event: React.TouchEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>, data: any, target: HTMLElement): void},
     }
 
     export interface ConnectMenuProps {
