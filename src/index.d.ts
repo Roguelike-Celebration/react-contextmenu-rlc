@@ -3,6 +3,7 @@ declare module "react-contextmenu-rlc" {
 
     export interface ContextMenuProps {
         id: string,
+        children?: React.ReactNode,
         data?: any,
         className?: string,
         hideOnLeave?: boolean,
@@ -30,6 +31,7 @@ declare module "react-contextmenu-rlc" {
 
     export interface MenuItemProps {
         attributes?: React.HTMLAttributes<HTMLDivElement>,
+        children?: React.ReactNode,
         className?: string;
         data?: Object,
         disabled?: boolean,
@@ -39,7 +41,8 @@ declare module "react-contextmenu-rlc" {
     }
 
     export interface SubMenuProps {
-        title: React.ReactElement<any> | React.ReactText,
+        title: React.ReactElement<any> | string | number,
+        children?: React.ReactNode,
         className?: string,
         disabled?: boolean,
         hoverDelay?: number,
