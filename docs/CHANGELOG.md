@@ -1,5 +1,9 @@
 # react-contextmenu-rlc CHANGELOG
 
+## 2.17.1 - in progress
+
+- Add CI using GitHub Actions.
+
 ## 2.17.0 - 2026-11-07
 
 - Stricter TS types for `onClick` and related handlers.

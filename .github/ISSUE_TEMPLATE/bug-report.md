@@ -1,8 +1,11 @@
+---
+name: Bug report
+about: Report a bug in react-contextmenu-rlc
+---
+
 <!--
 Thank you for contributing!
 -->
-
-<!-- BUG TEMPLATE -->
 
 ## Version
 

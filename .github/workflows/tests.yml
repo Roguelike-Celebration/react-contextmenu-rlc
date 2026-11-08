@@ -1,0 +1,66 @@
+name: Tests and Linting Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+
+      - name: Show tool versions
+        run: |
+          for cmd in node npm; do echo -n "${cmd}: "; ${cmd} --version; done
+
+      - name: NPM install
+        run: npm run setup
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Tests
+        if: ${{ !cancelled() }}
+        run: npm run test:only
+
+      # 'npm pack' reruns lint and tests through prepack. Accept the redundancy to get
+      # lint and test results shown in separate tests for easy failure identification.
+      - name: Build and pack
+        if: ${{ !cancelled() }}
+        run: npm pack
+
+      - name: Build examples
+        if: ${{ !cancelled() }}
+        run: npm run build:examples
+
+      # Checks that all the files the above steps wrote are covered by .gitignore
+      - name: Check for stray files
+        if: ${{ !cancelled() }}
+        run: |
+          git status --short --untracked-files=all
+          test -z "$(git status --porcelain --untracked-files=all)"
+
+  check-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+
+      - name: Show tool versions
+        run: |
+          for cmd in node npm; do echo -n "${cmd}: "; ${cmd} --version; done
+
+      - name: Regenerate lockfile
+        run: npx --yes yarn@1.22.22 install --ignore-optional --ignore-scripts
+
+      - name: Compare lockfile to git
+        run: git diff --exit-code yarn.lock
