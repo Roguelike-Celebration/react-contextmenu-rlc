@@ -1,13 +1,14 @@
 # Usage
 
-You need to setup two things:
+You need to set up two things:
+
 1. The `ContextMenu`
 2. The `ContextMenuTrigger`
 
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
+import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu-rlc";
 
 function handleClick(e, data) {
   console.log(data.foo);
@@ -43,11 +44,11 @@ ReactDOM.render(<MyApp myProp={12}/>, document.getElementById("main"));
 
 As you can see that the `ContextMenu` to be showed on any component is dependent on a **unique id**.
 
-See [examples](../examples) for more in detail usage.
+See [examples](https://github.com/Roguelike-Celebration/react-contextmenu-rlc/blob/main/examples/) for more in-detail usage.
 
 ## Styling
 
-The styling can be apllied to using following classes.
+The styling can be applied using the following classes.
 
 - `react-contextmenu` : applied to menu root element.
 - `react-contextmenu--visible` : applied to menu root element when visible.
@@ -59,4 +60,4 @@ The styling can be apllied to using following classes.
 - `react-contextmenu-wrapper` : applied to wrapper around elements in `ContextMenuTrigger`.
 - `react-contextmenu-submenu` : applied to items that are submenus.
 
-> Note: This package does note include any styling by default. You can use [react-contextmenu.css](https://github.com/vkbansal/react-contextmenu/blob/master/examples/react-contextmenu.css) from examples for quick setup.
+> Note: This package does not include any styling by default. You can use [react-contextmenu.css](https://github.com/Roguelike-Celebration/react-contextmenu-rlc/blob/main/examples/react-contextmenu.css) from examples for quick setup.

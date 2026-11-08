@@ -39,11 +39,13 @@ npm ci
 
 ## Releases
 
-Bump `version` in `package.json` to the new release.
+Bump `version` in `package.json` to the new release, removing the `-pre` suffix. Update `docs/CHANGELOG.md` to note the release date and make sure the major changes for this release are noted there.
 
 Run `npm pack` to create a dist tarball. (Do it under Node 16 with deps installed via `npm run setup`. The `prepack` step will handle the build.) Tag the release with `git tag -a` and create the release on GitHub, attaching the tarball to the release.
 
 Don't replace existing published tarballs. Any change should get a new version. This matters because consumers like azure-mud record the tarball's SHA checksum in `package-lock.json`, so a changed release tarball will break the build.
+
+After the release, bump `version` in `package.json` to the next upcoming release, with a `-pre` suffix to indicate it's a prerelease.
 
 ## OG README
 

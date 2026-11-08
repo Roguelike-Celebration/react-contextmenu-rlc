@@ -3,14 +3,19 @@ Thank you for contributing!
 -->
 
 <!-- BUG TEMPLATE -->
-## Version
-2.15.0
 
-## Test Case
-https://jsfiddle.net/Luktwrdm/54/
+## Version
+
+*Put version number here.*
 
 ## Steps to reproduce
 
+*Describe how to reproduce the problem.*
+
 ## Expected Behavior
 
+*Describe what you expected to happen.*
+
 ## Actual Behavior
+
+*Describe what actually happened, and what you saw that made you know that happened.*

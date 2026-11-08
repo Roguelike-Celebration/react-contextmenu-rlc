@@ -7,10 +7,11 @@ The module exports the following:
 - `MenuItem`
 - `SubMenu`
 
-### `<ContextMenu />`
+## `<ContextMenu />`
+
 Base Contextmenu Component.
 
-#### PropTypes
+### PropTypes
 
 | Property                 | Type     | Required? | Description                                                      |
 |--------------------------|----------|-----------|------------------------------------------------------------------|
@@ -19,16 +20,16 @@ Base Contextmenu Component.
 | onMouseLeave             | Function |           | Callback called when the mouse leaves the menu or submenu areas. |
 | onHide                   | Function |           | Callback called when the menu is hidden.                         |
 | onShow                   | Function |           | Callback called when the menu is shown.                          |
-| preventHideOnContextMenu | Boolean  |           | Prevents hiding of the context menu on contextMenu event.        | 
+| preventHideOnContextMenu | Boolean  |           | Prevents hiding of the context menu on contextMenu event.        |
 | preventHideOnResize      | Boolean  |           | Prevents hiding of the context menu on resize event.             |
 | preventHideOnScroll      | Boolean  |           | Prevents hiding of the context menu on scroll event.             |
 | className                | String   |           | Custom `className` applied to root element of the context-menu.  |
 
-### `<ContextMenuTrigger />`
+## `<ContextMenuTrigger />`
 
-Contextmenu Trigger Component
+ContextMenu Trigger Component
 
-#### PropTypes
+### PropTypes
 
 | Property                | Type                    | Required? | Default | Description                                                                                                                                                                                                                                     |
 |-------------------------|-------------------------|-----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -40,11 +41,11 @@ Contextmenu Trigger Component
 | renderTag               | String or React Element |           |         | The element inside which the Component must be wrapped. By default `div` is used. But this prop can used to customize it.                                                                                                                         |
 | disableIfShiftIsPressed | Boolean                 |           | `false` | If true and shift is pressed, it will open the native browser context menu and ignore this custom component |
 
-### `<MenuItem />`
+## `<MenuItem />`
 
 A Simple Component for menu items.
 
-#### PropTypes
+### PropTypes
 
 | Property     | Type     | Required? | Default | Description                                                                                                                                                                                                                                                                |
 |--------------|----------|-----------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,11 +58,11 @@ A Simple Component for menu items.
 | onMouseMove  | Function |           |         | **Internal Prop**: will be directly passed to associated element, so the surrounded context `ContextMenu` or `SubMenu` can handle the interactions to pass the correct `selected` state. Also the surrounded context can store the current selected `MenuItem`.    |
 | onMouseLeave | Function |           |         | **Internal Prop**: will be directly passed to associated element, so the surrounded context `ContextMenu` or `SubMenu` can handle the interactions to pass the correct `selected` state. Also the surrounded context can store the current selected `MenuItem`.    |
 
-### `<SubMenu />`
+## `<SubMenu />`
 
 A component for using submenus within the contextmenu.
 
-#### PropTypes
+### PropTypes
 
 | Property    | Type     | Required? | Default | Description                                                                 |
 |-------------|----------|-----------|---------|-----------------------------------------------------------------------------|

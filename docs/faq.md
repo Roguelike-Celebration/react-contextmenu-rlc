@@ -1,10 +1,10 @@
 # FAQs
 
-**Long left click triggers context menu**
+## Long left click triggers context menu
 
-As metioned in [API docs](), to disable the long press trigger on left-click just set a negative `holdToDisplay` value such as `-1`;
+As mentioned in the [API docs](api.md), to disable the long press trigger on left-click just set a negative `holdToDisplay` value such as `-1`.
 
-**Manually opening the context menu**
+## Manually opening the context menu
 
 If you want a [menu button](http://i.imgur.com/5Qsu2yW.png) that toggles the context menu manually with a regular left click, create a reference to the `ContextMenuTrigger` and pass the click event to `handleContextClick`.
 
