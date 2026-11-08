@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
-import ContextMenuTrigger from 'src/ContextMenuTrigger';
-import ContextMenu from 'src/ContextMenu';
-import MenuItem from 'src/MenuItem';
-import connectMenu from 'src/connectMenu';
+import { connectMenu, ContextMenu, ContextMenuTrigger, MenuItem } from 'react-contextmenu-rlc';
 
 const MENU_TYPE = 'DYNAMIC';
 

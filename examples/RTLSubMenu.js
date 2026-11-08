@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
-import ContextMenuTrigger from 'src/ContextMenuTrigger';
-import ContextMenu from 'src/ContextMenu';
-import MenuItem from 'src/MenuItem';
-import SubMenu from 'src/SubMenu';
+import { ContextMenu, ContextMenuTrigger, MenuItem, SubMenu } from 'react-contextmenu-rlc';
 
 const MENU_TYPE = 'RTL';
 

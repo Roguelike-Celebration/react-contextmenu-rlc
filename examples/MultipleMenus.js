@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import ContextMenuTrigger from 'src/ContextMenuTrigger';
-import ContextMenu from 'src/ContextMenu';
-import MenuItem from 'src/MenuItem';
+import { ContextMenu, ContextMenuTrigger, MenuItem } from 'react-contextmenu-rlc';
 
 const MENU_1 = 'MENU_1';
 const MENU_2 = 'MENU_2';

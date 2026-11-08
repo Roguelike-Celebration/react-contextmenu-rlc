@@ -19,6 +19,10 @@ const config = {
         sourceMapFilename: 'bundle.js.map'
     },
     resolve: {
+        alias: {
+            // Examples import the package by name, like a client would
+            'react-contextmenu-rlc': path.resolve(__dirname, '../src')
+        },
         modules: [
             path.resolve(__dirname, '../'),
             'node_modules'
